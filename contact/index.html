@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Meridian Aesthetics Studio</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="/">Meridian <small>Aesthetics Studio</small></a><button class="nav-toggle" data-nav-toggle>☰</button><nav class="nav-links" data-nav-menu><a data-nav-link href="/">Home</a><a data-nav-link href="/treatments/">Treatments</a><a data-nav-link href="/results/">Results</a><a data-nav-link href="/providers/">Providers</a><a data-nav-link href="/memberships/">Memberships</a><a data-nav-link href="/contact/">Contact</a></nav><a class="btn btn-primary desktop-only" href="/contact/">Request a Private Consultation</a></div></header>
+<main class="section">
+  <div class="container">
+    <p class="eyebrow">Private Consultation</p>
+    <h1>Request your visit with Meridian Aesthetics Studio.</h1>
+    <p class="muted">Complete the form below. Our concierge team will respond within one business day with appointment options.</p>
+    <form class="form-shell" data-contact-form novalidate>
+      <div class="form-grid">
+        <div class="form-group"><label for="name">Full Name *</label><input id="name" name="name" type="text" /><div class="error-text" data-error="name"></div></div>
+        <div class="form-group"><label for="email">Email *</label><input id="email" name="email" type="email" /><div class="error-text" data-error="email"></div></div>
+        <div class="form-group"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" /><div class="error-text" data-error="phone"></div></div>
+        <div class="form-group"><label for="interest">Treatment Interest *</label><select id="interest" name="interest"><option value="">Select one</option><option>Neuromodulators</option><option>Dermal Filler</option><option>Skin Optimization</option><option>Memberships</option></select><div class="error-text" data-error="interest"></div></div>
+      </div>
+      <div class="form-group" style="margin-top:.2rem;"><label for="message">Goals / Notes</label><textarea id="message" name="message" placeholder="Tell us about your goals, timeline, and availability."></textarea></div>
+      <button class="btn btn-primary" type="submit" style="margin-top:.7rem;">Submit Request</button>
+      <div class="success-message" data-form-success>Thank you. Your consultation request has been received. A concierge coordinator will contact you shortly.</div>
+    </form>
+  </div>
+</main>
+<footer class="site-footer"><div class="container"><p>Meridian Aesthetics Studio • Staten Island, NY • © <span data-year></span></p></div></footer>
+<div class="mobile-cta"><a class="btn btn-primary" href="/contact/">Request a Private Consultation</a></div>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

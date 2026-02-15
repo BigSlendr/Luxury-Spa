@@ -1,34 +1,43 @@
-# Meridian Aesthetics Studio (Lead-Generation Demo)
+# Meridian Aesthetics Studio (Static Website)
 
-A premium, mobile-first med spa website demo built with Next.js App Router + TypeScript + Tailwind CSS.
+This repository is now a **framework-free static website** for Meridian Aesthetics Studio in Staten Island, NY.
 
-## Purpose
-- Showcase a clean, modern, luxury aesthetic clinic experience.
-- Drive consultations via short contact form and click-to-call/text.
-- Provide scalable page structure for services, results, providers, memberships, and contact.
+## Pages
 
-## Run locally
-1. Install dependencies: `npm install`
-2. Start dev server: `npm run dev`
-3. Open `http://localhost:3000`
+- `/index.html`
+- `/treatments/index.html`
+- `/results/index.html`
+- `/providers/index.html`
+- `/memberships/index.html`
+- `/contact/index.html`
 
-## Project structure
-- `app/`: route pages + local API route
-- `components/`: reusable UI components
-- `data/siteData.ts`: content arrays for cards, filters, and sections
+## Assets
 
-## What to customize
-- Branding, logo, phone/address/hours placeholders
-- Real reviews, provider bios, treatment details, and photography
-- Form options and disclaimers for your legal/compliance needs
+- `/assets/css/styles.css`
+- `/assets/js/main.js`
 
-## Contact form behavior
-- Form posts to `POST /api/contact`
-- API route logs the submission server-side and returns success/failure JSON
-- Frontend shows validation errors and success/error state
+## Features Included
 
-## Connect form to email later
-Inside `app/api/contact/route.ts`:
-- Replace console logging with an email send (e.g., Resend/Formspree)
-- Keep server-side validation and add spam protection if needed
-- Optionally forward submissions to CRM/EMR workflow tools
+- Quiet-luxury visual style with neutral palette and soft-gold accent.
+- Sticky header and mobile bottom CTA bar.
+- Primary CTA: **Request a Private Consultation** (links to `/contact/`).
+- Results gallery with category filters and image modal.
+- FAQ accordion.
+- Contact form with client-side validation and success state (no backend required).
+
+## Run Locally
+
+Because this is static HTML/CSS/JS, no build step is required.
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open:
+
+- `http://localhost:8000/`
+
+## Notes
+
+- All interactions are handled by vanilla JavaScript in `assets/js/main.js`.
+- Demo images are loaded from Unsplash URLs.
