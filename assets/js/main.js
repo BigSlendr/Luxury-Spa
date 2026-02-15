@@ -1,6 +1,6 @@
 (function () {
-  const navToggle = document.querySelector('[data-nav-toggle]');
-  const navMenu = document.querySelector('[data-nav-menu]');
+  const navToggle = document.getElementById('menuBtn') || document.querySelector('[data-nav-toggle]');
+  const navMenu = document.getElementById('nav') || document.querySelector('[data-nav-menu]');
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', function () {
       navMenu.classList.toggle('open');
@@ -52,15 +52,16 @@
     });
   }
 
-  const faqButtons = document.querySelectorAll('.faq-q');
-  faqButtons.forEach(function (button) {
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function (item) {
+    const button = item.querySelector('.faq-q') || item;
     button.addEventListener('click', function () {
-      const item = button.closest('.faq-item');
       item.classList.toggle('open');
+      item.classList.toggle('active');
     });
   });
 
-  const form = document.querySelector('[data-contact-form]');
+  const form = document.getElementById('contactForm') || document.querySelector('[data-contact-form]');
   if (form) {
     form.addEventListener('submit', function (event) {
       event.preventDefault();
